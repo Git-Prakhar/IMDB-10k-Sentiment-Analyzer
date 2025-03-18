@@ -13,7 +13,7 @@ def predict_sentiment(review):
     return 'Positive' if rf.predict(review)[0] == 1 else 'Negative'
   
 
-st.title("IMDB Sentiment Analysis")
+st.title("IMDB Sentiment Analysis (80% accuracy)")
 review = st.text_area("Enter your review here")
 if st.button("Predict"):
     sentiment = predict_sentiment(review)
